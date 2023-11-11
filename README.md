@@ -1,12 +1,9 @@
 # Публикация CRA приложения React в GitHub Pages
 
-Приложение в ветке dev
+Код приложения в ветке "dev"
 
-###Sequence Diagram
+Build and publish to Github Pages
 
-```seq
-Andrew->China: Says Hello
-Note right of China: China thinks\nabout it
-China-->Andrew: How are you?
-Andrew->>China: I am good thanks!
-```
+`$ npm run deploy`
+
+[Ссылка на приложение](https://wmcheck.github.io/cra/)
