@@ -1,4 +1,9 @@
+import React, { useState, useEffect } from 'react';
 import ListElements from './List';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import sampleFile from './sample.md';
+
 import {
   ThemeProvider,
   BaseStyles,
@@ -32,6 +37,18 @@ import {
 } from '@primer/octicons-react';
 
 function App() {
+  //const markdown = '# Hi, *Pluto*!';
+  const [markdown, setMarkdown] = useState('');
+  useEffect(() => {
+    // Update the document title using the browser API
+    //document.title = `You clicked ${count} times`;
+    fetch(sampleFile)
+      .then((response) => response.text())
+      .then((text) => {
+        setMarkdown(text);
+      });
+  }, []);
+
   return (
     <ThemeProvider>
       <BaseStyles>
@@ -156,6 +173,8 @@ function App() {
                 Team
               </Breadcrumbs.Item>
             </Breadcrumbs>
+            {/* <Markdown>{markdown}</Markdown> */}
+            <ReactMarkdown remarkPlugins={[remarkGfm]} children={markdown} />
             <ListElements />
           </PageLayout.Content>
           <PageLayout.Footer divider="line">Footer</PageLayout.Footer>
