@@ -1,3 +1,4 @@
+import ListElements from './List';
 import {
   ThemeProvider,
   BaseStyles,
@@ -13,6 +14,11 @@ import {
   Timeline,
   StateLabel,
   Breadcrumbs,
+  Link,
+  SubNav,
+  NavList,
+  ButtonGroup,
+  PageLayout,
 } from '@primer/react';
 
 import { PageHeader, Blankslate } from '@primer/react/drafts';
@@ -20,41 +26,71 @@ import {
   MarkGithubIcon,
   GitCommitIcon,
   BookIcon,
+  CodeIcon,
+  FeedMergedIcon,
+  FlameIcon,
 } from '@primer/octicons-react';
-
-const Line = () => (
-  <UnderlineNav aria-label="Main">
-    <UnderlineNav.Link href="#home" selected>
-      Home
-    </UnderlineNav.Link>
-    <UnderlineNav.Link href="#documentation">Documentation</UnderlineNav.Link>
-    <UnderlineNav.Link href="#support">Support</UnderlineNav.Link>
-  </UnderlineNav>
-);
 
 function App() {
   return (
     <ThemeProvider>
       <BaseStyles>
-        <Header>
+        <Header
+          sx={{
+            bg: '#f6f8fa',
+            color: 'black',
+            // '&:hover, &:focus': {
+            //   color: 'green',
+            // },
+            '&:hover': {
+              color: 'black',
+            },
+          }}
+        >
           <Header.Item>
             <Header.Link
               href="#"
               sx={{
                 fontSize: 2,
+                color: 'black',
+                // '&:hover, &:focus': {
+                //   color: 'green',
+                // },
+                '&:hover': {
+                  color: 'black',
+                },
               }}
             >
               <Octicon
-                icon={MarkGithubIcon}
-                size={32}
+                icon={FeedMergedIcon}
+                size={28}
                 sx={{
                   mr: 2,
                 }}
               />
-              <span>GitHub</span>
+              <span>wmCheck</span>
             </Header.Link>
           </Header.Item>
-          <Header.Item full>Menu</Header.Item>
+          <Header.Item full className="link">
+            Menu
+          </Header.Item>
+
+          <Header.Item>
+            <Header.Link href="#" className="link">
+              About
+            </Header.Link>
+          </Header.Item>
+          <Header.Item>
+            <Header.Link href="#" className="link">
+              Releases
+            </Header.Link>
+          </Header.Item>
+          <Header.Item>
+            <Header.Link href="#" className="link">
+              Team
+            </Header.Link>
+          </Header.Item>
+
           <Header.Item
             sx={{
               mr: 0,
@@ -68,25 +104,62 @@ function App() {
             />
           </Header.Item>
         </Header>
-        <Box
-          sx={{
-            padding: 3,
+        <div
+          style={{
+            background: '#f6f8fa',
+            boxShadow:
+              'inset 0 calc(var(max(1px, 0.0625rem), 1px)*-1) var(max(1px, 0.0625rem), var(#d0d7de))',
           }}
         >
-          <PageHeader>
-            <PageHeader.TitleArea>
-              <PageHeader.Title>Title</PageHeader.Title>
-            </PageHeader.TitleArea>
-          </PageHeader>
+          <UnderlineNav aria-label="Main">
+            <UnderlineNav.Item
+              key="1"
+              href="/"
+              aria-current="page"
+              icon={CodeIcon}
+            >
+              Home
+            </UnderlineNav.Item>
 
-          <Breadcrumbs>
-            <Breadcrumbs.Item href="#">Home</Breadcrumbs.Item>
-            <Breadcrumbs.Item href="#">About</Breadcrumbs.Item>
-            <Breadcrumbs.Item href="#" selected>
-              Team
-            </Breadcrumbs.Item>
-          </Breadcrumbs>
-        </Box>
+            <UnderlineNav.Item
+              key="2"
+              href="#documentation"
+              icon={MarkGithubIcon}
+              counter="3"
+              date
+            >
+              Documentation
+            </UnderlineNav.Item>
+            <UnderlineNav.Item key="3" href="#support5" icon={FlameIcon}>
+              Contact name
+            </UnderlineNav.Item>
+            <UnderlineNav.Item key="4" href="#documentation4">
+              asdf
+            </UnderlineNav.Item>
+            <UnderlineNav.Item key="5" href="#support3" counter="399">
+              Contact
+            </UnderlineNav.Item>
+          </UnderlineNav>
+        </div>
+
+        <PageLayout containerWidth="full">
+          <PageLayout.Content sx={{ bg: 'white' }}>
+            <PageHeader>
+              <PageHeader.TitleArea>
+                <PageHeader.Title>Title</PageHeader.Title>
+              </PageHeader.TitleArea>
+            </PageHeader>
+            <Breadcrumbs>
+              <Breadcrumbs.Item href="#">Home</Breadcrumbs.Item>
+              <Breadcrumbs.Item href="#">About</Breadcrumbs.Item>
+              <Breadcrumbs.Item href="#" selected>
+                Team
+              </Breadcrumbs.Item>
+            </Breadcrumbs>
+            <ListElements />
+          </PageLayout.Content>
+          <PageLayout.Footer divider="line">Footer</PageLayout.Footer>
+        </PageLayout>
       </BaseStyles>
     </ThemeProvider>
   );
