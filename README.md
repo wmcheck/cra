@@ -1,7 +1,7 @@
-# Публикация CRA приложения React в GitHub Pages
+# Публикация CRA приложения Мое резюме React в GitHub Pages
 
-Код приложения в ветке "dev" для публикации выполните:
+Код приложения в ветке "dev" для публикации выполть:
 
 `$ npm run deploy`
 
-[Ссылка на приложение](https://wmcheck.github.io/cra/)
+[Ссылка на резюме](https://wmcheck.github.io/cra/)
