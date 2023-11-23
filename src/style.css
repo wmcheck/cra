@@ -228,3 +228,21 @@ a:hover {
   size: a4;
   margin: 5mm;
 }
+
+
+.avatar-user {
+  border-radius: 50% !important;
+}
+.avatar {
+  /* background-color: var(--avatar-bgColor, var(--color-avatar-bg));
+  border-radius: var(--borderRadius-medium, 0.375rem);
+  box-shadow: 0 0 0 1px var(--avatar-borderColor, var(--color-avatar-border)); */
+  display: inline-block;
+  flex-shrink: 0;
+  line-height: 1;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.width-full {
+  width: 100% !important;
+}
