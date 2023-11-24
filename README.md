@@ -4,4 +4,4 @@
 
 `$ npm run deploy`
 
-[Ссылка на резюме](https://wmcheck.github.io/cra/)
+[Ссылка на резюме](https://wmcheck.github.io/job-resume/)
