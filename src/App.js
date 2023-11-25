@@ -378,11 +378,11 @@ function App() {
           <section>
             <h2>Награды и Свидетельства</h2>
             <img src="./003.png" width="90%" />
-            <img src="./001.png" width="90%" />
             <img src="./002.png" width="90%" />
+            <img src="./001.png" width="90%" />
           </section>
         </div>
-        <div className="sidebar footer">&nbsp; Опубликовано: 23.11.2023</div>
+        <div className="sidebar footer">&nbsp; Обновлено: 25.11.2023</div>
       </div>
     </>
   );
