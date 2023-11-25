@@ -377,7 +377,7 @@ function App() {
         <div className="content content_awards">
           <section>
             <h2>Награды и Свидетельства</h2>
-
+            <img src="./003.png" width="90%" />
             <img src="./001.png" width="90%" />
             <img src="./002.png" width="90%" />
           </section>
