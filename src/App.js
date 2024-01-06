@@ -84,43 +84,57 @@ function App() {
             <h2>Навыки</h2>
             <div className="compact">
               <p>
-                Языки программирования:{' '}
+                <b>Языки программирования:</b>{' '}
                 <span itemprop="knowsAbout">JavaScript</span>,{' '}
                 <span itemprop="knowsAbout">Delphi</span>,{' '}
                 <span itemprop="knowsAbout">PHP</span>,{' '}
                 <span itemprop="knowsAbout">SQL</span>
               </p>
               <p>
-                Опыт использования: <span itemprop="knowsAbout">Node.js</span>,{' '}
+                <b>Опыт использования:</b>{' '}
+                <span itemprop="knowsAbout">Node.js</span>,{' '}
                 <span itemprop="knowsAbout">Zustand</span>,{' '}
                 <span itemprop="knowsAbout">React.js</span>,{' '}
                 <span itemprop="knowsAbout">Vue.js</span>,{' '}
-                <span itemprop="knowsAbout">CSS</span>,{' '}
+                <span itemprop="knowsAbout">HTML, CSS</span>,{' '}
                 <span itemprop="knowsAbout">Babel</span>,{' '}
-                <span itemprop="knowsAbout">webpack plugins</span>,{' '}
+                <span itemprop="knowsAbout">Webpack</span>,{' '}
                 <span itemprop="knowsAbout">Jest</span>,{' '}
                 <span itemprop="knowsAbout">Redux</span>,{' '}
                 <span itemprop="knowsAbout">Mobx</span>,{' '}
-                <span itemprop="knowsAbout">Rabbit MQ</span>,{' '}
-                <span itemprop="knowsAbout">HTTP, HTML, XML, JSON, SQL</span>,{' '}
-                <span itemprop="knowsAbout">MS SQL, MySQL, Postgres</span>,{' '}
-                <span itemprop="knowsAbout">командная строка *NIX</span>,{' '}
-                <span itemprop="knowsAbout">Git</span>,{' '}
-                <span itemprop="knowsAbout">Docker</span>,{' '}
-                <span itemprop="knowsAbout">Apache, Nginx</span>{' '}
                 <span itemprop="knowsAbout">Bootstrap, Antd</span>,{' '}
-                <span itemprop="knowsAbout">Photoshop, Corel, 360 Fusion</span>
+                <span itemprop="knowsAbout">XML, JSON, Rabbit MQ</span>{' '}
               </p>
               <p>
-                Изучаю: <span itemprop="knowsAbout">TypeScript</span>,{' '}
-                <span itemprop="knowsAbout">Goland</span>{' '}
+                <b>Базы данных:</b>{' '}
+                <span itemprop="knowsAbout">
+                  MS SQL, MySQL, Postgres, SQLite
+                </span>
               </p>
               <p>
-                Придерживаюсь:{' '}
+                <b>Инструменты:</b>{' '}
+                <span itemprop="knowsAbout">
+                  VS Code, Postman, Figma, Photoshop, Corel, 360 Fusion
+                </span>
+              </p>
+              <p>
+                <b>DevOps:</b>{' '}
+                <span itemprop="knowsAbout">
+                  Git, Docker, Apache, Nginx, командная строка *NIX
+                </span>
+              </p>
+              <p>
+                <b>Изучаю:</b>{' '}
+                <span itemprop="knowsAbout">
+                  TypeScript, Goland, GraphQL, NoSQL БД
+                </span>{' '}
+              </p>
+              <p>
+                <b>Придерживаюсь:</b>{' '}
                 <span itemprop="knowsAbout">ООП, REST, SOLID, БЭМ</span>
               </p>
               <p>
-                Английский язык:{' '}
+                <b>Английский язык:</b>{' '}
                 <span itemprop="knowsAbout">
                   базовый на уровне чтения технической документации
                 </span>
@@ -267,6 +281,11 @@ function App() {
                 <li>
                   сервис отчетов: генерация отчетности с помощью автоматизации
                   MS Office
+                </li>
+                <li>
+                  Участие в написание документации, тех. заданий, ВКС,
+                  взаимодействие со сторонними разработчиками и DevOps и
+                  безопасниками Министерства
                 </li>
               </ul>
             </p>
