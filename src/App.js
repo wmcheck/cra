@@ -120,7 +120,7 @@ function App() {
                 <span itemprop="knowsAbout">ООП, REST, SOLID, БЭМ</span>
               </p>
               <p>
-                Английский:{' '}
+                Английский язык:{' '}
                 <span itemprop="knowsAbout">
                   базовый на уровне чтения технической документации
                 </span>
