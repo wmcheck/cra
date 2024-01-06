@@ -11,7 +11,8 @@ function App() {
           </h1>
           <p className="lead" itemprop="description">
             Программист, Front-end и Back-end разработчик, архитектор решений.
-            Изучаю и практикую JavaScript, TypeScript, NodeJs и веб технологии.
+            Изучаю и практикую JavaScript, NodeJs и веб технологии, готов к
+            изучению новых языков.
           </p>
           <p>
             Нравится создавать алгоритмы для решения реальных задач, облегчающих
@@ -50,7 +51,7 @@ function App() {
                     itemtype="http://schema.org/PostalAddress"
                   >
                     <span itemprop="addressLocality">
-                      Балашиха мкр.Железнодорожный
+                      МО, Балашиха мкр.Железнодорожный
                     </span>
                   </span>
                 </span>
@@ -86,7 +87,6 @@ function App() {
               <p>
                 Языки программирования:{' '}
                 <span itemprop="knowsAbout">JavaScript</span>,{' '}
-                {/* <span itemprop="knowsAbout">TypeScript</span>,{' '} */}
                 <span itemprop="knowsAbout">Delphi</span>,{' '}
                 <span itemprop="knowsAbout">PHP</span>,{' '}
                 <span itemprop="knowsAbout">SQL</span>
@@ -98,25 +98,31 @@ function App() {
                 <span itemprop="knowsAbout">Vue.js</span>,{' '}
                 <span itemprop="knowsAbout">CSS</span>,{' '}
                 <span itemprop="knowsAbout">Babel</span>,{' '}
-                <span itemprop="knowsAbout">webpack</span> plugins
+                <span itemprop="knowsAbout">webpack plugins</span>,{' '}
                 <span itemprop="knowsAbout">Jest</span>,{' '}
                 <span itemprop="knowsAbout">Redux</span>,{' '}
                 <span itemprop="knowsAbout">Mobx</span>,{' '}
                 <span itemprop="knowsAbout">Rabbit MQ</span>,{' '}
                 <span itemprop="knowsAbout">HTTP, HTML, XML, JSON, SQL</span>,{' '}
-                <span itemprop="knowsAbout">MS SQL, MySQL</span>
-                <span itemprop="knowsAbout">
-                  инструменты командной строки *NIX
-                </span>
-                , <span itemprop="knowsAbout">Git</span>,{' '}
+                <span itemprop="knowsAbout">MS SQL, MySQL, Postgres</span>,{' '}
+                <span itemprop="knowsAbout">командная строка *NIX</span>,{' '}
+                <span itemprop="knowsAbout">Git</span>,{' '}
                 <span itemprop="knowsAbout">Docker</span>,{' '}
-                <span itemprop="knowsAbout">
-                  конфигурирование Apache, Nginx
-                </span>
+                <span itemprop="knowsAbout">Apache, Nginx</span>
               </p>
               <p>
-                Придерживаюсь:
+                Изучаю: <span itemprop="knowsAbout">TypeScript</span>,{' '}
+                <span itemprop="knowsAbout">Goland</span>{' '}
+              </p>
+              <p>
+                Придерживаюсь:{' '}
                 <span itemprop="knowsAbout">ООП, REST, SOLID, БЭМ</span>
+              </p>
+              <p>
+                Английский:{' '}
+                <span itemprop="knowsAbout">
+                  базовый на уровне чтения технической документации
+                </span>
               </p>
             </div>
           </div>
@@ -124,10 +130,12 @@ function App() {
           <div className="contacts">
             <h2>О себе</h2>
             <div className="compact">
-              <p>
-                Не конфликтный, готовность брать на себя больше ответственности
-              </p>
+              <p>Не конфликтный, готов брать на себя больше ответственности</p>
               <p>Навыки совместной работы</p>
+              <p>
+                Постоянно учусь и изучаю передовые технологии, библиотеки и
+                инструменты для использования в повседневной работе.
+              </p>
             </div>
           </div>
 
@@ -138,6 +146,7 @@ function App() {
               <dd>(Балашовский Государственный Педагогический Институт)</dd>
               <dd>1992 - 1997</dd>
               <dd>Физико-математический факультет</dd>
+              <dd>Basic, Pascal, Assembler</dd>
             </dl>
           </div>
         </section>
@@ -156,22 +165,14 @@ function App() {
               Министерства Энергетики РФ (активных пользователей более 600
               человек, более 40 млн. документов, более 30 программных
               комплексов)
-              {/* Состав системы: Кадры, Делопроизводство, Телефонный справочник,
-              Обращения граждан, Администрирование системы, Контракты и
-              договора, Проекты документов, Контроль поручений,
-              Телекоммуникационный обмен, Госуслуги и межведомственные запросы
-              СМЭВ  т.д.  */}
             </p>
-            {/* <p>
-              Постоянно учусь и обучаю коллег использовать передовые технологии, библиотеки и инструменты в повседневной работе. 
-              Разрабатываю и внедряю новые компоненты системы, создаю и продумываю структуры, оптимизирую хранение данных. 
-            </p> */}
 
             <p>
-              Разработал базовую архитектуру веб версии системы ВИС
-              (авторизация, интерфейс, разграничение прав, управление профилем
-              пользователя и администрирования) автоматизация развертывания
-              нового релиза в проде:
+              Разработал архитектуру веб версии системы ВИС (авторизация,
+              интерфейс, разграничение прав, управление профилем пользователя и
+              администрирования), разработал структуру таблиц и хранимые
+              процедуры в БД , автоматизация развертывания нового релиза в
+              проде:
               <ul>
                 <li>
                   Back-end API на <b>Node.js</b> + фреймворк <b>Moleculer</b>
@@ -230,7 +231,7 @@ function App() {
                   по проектам документов
                 </li>
                 <li>
-                  от ТЗ до внедрения <b>21 государственная услуга Минэнерго</b>{' '}
+                  <b>21 государственная услуга Минэнерго</b> от ТЗ до внедрения
                   в среде СМЭВ-2 и последующий перевод на СМЭВ-3
                 </li>
                 <li>
@@ -239,8 +240,8 @@ function App() {
                   взаимодействие между государственными органами)
                 </li>
                 <li>
-                  импорт данных из <b>1С</b> по учету платежей по контрактам и
-                  договорам
+                  импорт/экспорт данных с <b>1С</b> учет платежей по контрактам
+                  и договорам
                 </li>
                 <li>
                   участствовал в разработке и внедрению модуля для работы с{' '}
@@ -259,11 +260,12 @@ function App() {
                   обращений граждан
                 </li>
                 <li>
-                  подключении к <b>ПОС</b> (Платформа Обратной Связи)
+                  подключении и автоматизация к <b>ПОС</b>(Платформа Обратной
+                  Связи) через СМЭВ-3
                 </li>
                 <li>
-                  релизация сервиса отчетов, генерация отчетности с
-                  автоматизацией MS Office
+                  сервис отчетов: генерация отчетности с помощью автоматизации
+                  MS Office
                 </li>
               </ul>
             </p>
@@ -327,11 +329,14 @@ function App() {
               Full stack Web Developer, 2005 - 2020. Индивидуальная разработка.
             </p>
             <p>
-              Создал и запустил <b>сайт</b> по прокату лимузинов и ретро
-              автомобилей в Москве и МО, автоматизировал онлайн заказы, SEO
-              продвижение и реклама в Яндекс Директ. Вывел сайт в поисковой
-              выдаче на первые позиции в поисковой выдаче Yandex и Google и
-              обеспечил постоянный поток заявок и заказов.
+              Создал и запустил 2 сайта по прокату лимузинов (limo-city.ru) и
+              ретро автомобилей (excalibur-phantom.ru) в Москве и МО,
+              автоматизировал онлайн заказы, SEO продвижение и реклама в Яндекс
+              Директ. Вывел сайт в поисковой выдаче на первые позиции в
+              поисковой выдаче Yandex и Google и обеспечил постоянный поток
+              заявок и заказов. 
+              <br />P.S. в настоящиее время компании уже не
+              существует.
             </p>
           </section>
 
@@ -377,12 +382,12 @@ function App() {
         <div className="content content_awards">
           <section>
             <h2>Награды и Свидетельства</h2>
+            <img src="./001.png" width="90%" />
             <img src="./003.png" width="90%" />
             <img src="./002.png" width="90%" />
-            <img src="./001.png" width="90%" />
           </section>
         </div>
-        <div className="sidebar footer">&nbsp; Обновлено: 25.11.2023</div>
+        <div className="sidebar footer">&nbsp; Обновлено: 06.01.2024</div>
       </div>
     </>
   );
