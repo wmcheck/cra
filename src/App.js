@@ -107,7 +107,8 @@ function App() {
                 <span itemprop="knowsAbout">командная строка *NIX</span>,{' '}
                 <span itemprop="knowsAbout">Git</span>,{' '}
                 <span itemprop="knowsAbout">Docker</span>,{' '}
-                <span itemprop="knowsAbout">Apache, Nginx</span>
+                <span itemprop="knowsAbout">Apache, Nginx</span>{' '}
+                <span itemprop="knowsAbout">Bootstrap, Antd</span>,{' '}
                 <span itemprop="knowsAbout">Photoshop, Corel, 360 Fusion</span>
               </p>
               <p>
