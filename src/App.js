@@ -124,9 +124,9 @@ function App() {
                 </span>
               </p>
               <p>
-                <b>Изучаю:</b>{' '}
+                <b>Сейчас изучаю:</b>{' '}
                 <span itemprop="knowsAbout">
-                  TypeScript, Goland, GraphQL, NoSQL БД
+                  DDD, TypeScript, Goland, GraphQL, NoSQL БД
                 </span>{' '}
               </p>
               <p>
