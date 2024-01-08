@@ -24,8 +24,8 @@ function App() {
           <div>
             <img
               src="https://avatars.githubusercontent.com/u/2428660?v=4"
-              width="236"
-              height="236"
+              width="236px"
+              height="236px"
               className="avatar avatar-user border color-bg-default"
             />
           </div>
