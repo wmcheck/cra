@@ -417,7 +417,7 @@ function App() {
             <img src="./002.png" width="90%" />
           </section>
         </div>
-        <div className="sidebar footer">&nbsp; Обновлено: 06.01.2024</div>
+        <div className="sidebar footer">&nbsp; Обновлено: 08.01.2024</div>
       </div>
     </>
   );
