@@ -86,6 +86,7 @@ function App() {
               <p>
                 <b>Языки программирования:</b>{' '}
                 <span itemprop="knowsAbout">JavaScript</span>,{' '}
+                <span itemprop="knowsAbout">TypeScript</span>,{' '}
                 <span itemprop="knowsAbout">Delphi</span>,{' '}
                 <span itemprop="knowsAbout">PHP</span>,{' '}
                 <span itemprop="knowsAbout">SQL</span>
@@ -101,7 +102,6 @@ function App() {
                 <span itemprop="knowsAbout">Webpack</span>,{' '}
                 <span itemprop="knowsAbout">Jest</span>,{' '}
                 <span itemprop="knowsAbout">Redux</span>,{' '}
-                <span itemprop="knowsAbout">Mobx</span>,{' '}
                 <span itemprop="knowsAbout">Bootstrap, Antd</span>,{' '}
                 <span itemprop="knowsAbout">XML, JSON, Rabbit MQ</span>{' '}
               </p>
@@ -178,7 +178,7 @@ function App() {
               Разработка, внедрение и сопровождение{' '}
               <b>Ведомственной Информационной Системы</b> (ВИС) для ЦА
               Министерства Энергетики РФ (активных пользователей более 600
-              человек, более 40 млн. документов, более 30 программных
+              человек, более 40 млн. документов, более 20 программных
               комплексов)
             </p>
 
@@ -190,10 +190,11 @@ function App() {
               проде:
               <ul>
                 <li>
-                  Back-end API на <b>Node.js</b> + фреймворк <b>Moleculer</b>
+                  Back-end API на <b>Node.js js/ts</b> + фреймворк{' '}
+                  <b>Moleculer</b>
                 </li>
                 <li>
-                  Front-end на <b>React.js</b> + <b>Zustand</b>
+                  Front-end на <b>React js/ts</b> + <b>Zustand</b>
                 </li>
                 <li>
                   интегрировал веб-приложение с сервером документов{' '}
@@ -417,7 +418,7 @@ function App() {
             <img src="./002.png" width="90%" />
           </section>
         </div>
-        <div className="sidebar footer">&nbsp; Обновлено: 08.01.2024</div>
+        <div className="sidebar footer">&nbsp; Обновлено: 12.01.2024</div>
       </div>
     </>
   );
